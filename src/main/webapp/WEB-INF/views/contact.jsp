@@ -685,14 +685,14 @@ textarea.form-control {
 
 <style>
 
-.enquiry-form{
+/* .enquiry-form{
     background:#fff;
     padding:40px;
     border-radius:20px;
     box-shadow:0 10px 35px rgba(0,0,0,0.1);
     max-width:600px;
     margin:auto;
-}
+} */
 
 .form-title{
     font-size:32px;
@@ -1020,54 +1020,33 @@ textarea.form-control {
 
             <h2 class="form-title">Send Your Enquiry</h2>
 
-            <form action="contact.php" method="POST">
+            <form id="contactForm">
 
                 <input type="text" name="first_name" placeholder="First Name" required>
-            
-                <input type="text" name="last_name" placeholder="Last Name" required>
-            
-                <input type="email" name="email" placeholder="Email" required>
-            
-                <input type="text" name="phone" placeholder="Phone" required>
-            
-                <select name="service" required>
-            
-                    <option value="">Select Service</option>
-            
-                    <option value="SEO">SEO</option>
-            
-                    <option value="Social Media Marketing">
-                        Social Media Marketing
-                    </option>
-            
-                    <option value="Google Ads">
-                        Google Ads
-                    </option>
-            
-                    <option value="Website Development">
-                        Website Development
-                    </option>
-            
-                    <option value="Graphic Designing">
-                        Graphic Designing
-                    </option>
-            
-                    <option value="Flex & Print Design">
-                        Flex & Print Design
-                    </option>
-            
-                </select>
-            
-                <textarea name="message" placeholder="Message" required></textarea>
-            
-                <button type="submit">Send Message</button>
-            
-            </form>
-    
 
-           
-        
-            
+                <input type="text" name="last_name" placeholder="Last Name" required>
+
+                <input type="email" name="email" placeholder="Email" required>
+
+                <input type="text" name="phone" placeholder="Phone" required>
+
+                <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Social Media Marketing">Social Media Marketing</option>
+                    <option value="Google Ads">Google Ads</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Graphic Designing">Graphic Designing</option>
+                    <option value="Flex & Print Design">Flex & Print Design</option>
+                </select>
+
+                <textarea name="message" placeholder="Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <div id="responseMsg" style="text-align:center;margin-top:10px;"></div>
         
         </div>
 
@@ -1210,10 +1189,54 @@ textarea.form-control {
 
     <script>
         // Simple form success message
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('✅ Thank you! Your enquiry has been sent successfully. We will contact you soon.');
-            this.reset();
+        // document.getElementById('contactForm').addEventListener('submit', function (e) {
+        //     e.preventDefault();
+        //     alert('✅ Thank you! Your enquiry has been sent successfully. We will contact you soon.');
+        //     this.reset();
+        // });
+
+        $(document).ready(function () {
+            $("#contactForm").submit(function (e) {
+                e.preventDefault();
+
+                let formData = {
+                    firstName: $("input[name='first_name']").val(),
+                    lastName: $("input[name='last_name']").val(),
+                    email: $("input[name='email']").val(),
+                    phone: $("input[name='phone']").val(),
+                    service: $("select[name='service']").val(),
+                    message: $("textarea[name='message']").val()
+                };
+
+                console.log("Form Data:", formData); // Debugging log
+
+                $.ajax({
+                    url: "/mail/contact",
+                    type: "POST",
+                    data: formData,
+
+                    success: function (response) {
+                        if (response === "success") {
+                            $("#responseMsg").html("<span style='color:green;text-align:center;'>Mail sent successfully!</span>");
+                            $("#contactForm")[0].reset();
+                            setTimeout(function () {
+                                $("#responseMsg").html("");
+                            }, 5000);
+                        } else {
+                            $("#responseMsg").html("<span style='color:red;text-align:center;'>Failed to send mail</span>");
+                            setTimeout(function () {
+                                $("#responseMsg").html("");
+                            }, 5000);
+                        }
+                    },
+
+                    error: function () {
+                        $("#responseMsg").html("<span style='color:red;'>Server error</span>");
+                    }
+                });
+
+            });
+
         });
     </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
