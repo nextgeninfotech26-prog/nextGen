@@ -461,7 +461,7 @@
 
             <a href="/" class="brand-wrapper d-flex align-items-center text-decoration-none">
 
-                <img src="img/img/logo.jpg" alt="Logo" class="logo-img">
+                <img src="img/img/logo.jpg" loading="lazy" alt="Logo" class="logo-img">
 
                 <div class="brand-text ms-2">
                     <span style="color:red; ">SAANVITHA</span>
@@ -548,7 +548,7 @@
 
                 <!-- Left Side Image -->
                 <div class="col-lg-5">
-                    <img src="img/img/path1.jpg" alt="Career Image" class="career-img">
+                    <img src="img/img/path1.jpg" loading="lazy" alt="Career Image" class="career-img">
                 </div>
 
                 <!-- Right Side Content -->
@@ -596,7 +596,7 @@
 
                 <!-- Right Side Image -->
                 <div class="col-lg-5">
-                    <img src="img/img/hero2.jpg" alt="Why Join Us" class="career-img">
+                    <img src="img/img/hero2.jpg" loading="lazy" alt="Why Join Us" class="career-img">
                 </div>
 
             </div>

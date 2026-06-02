@@ -856,7 +856,7 @@ textarea.form-control {
 
             <a href="/" class="brand-wrapper d-flex align-items-center text-decoration-none">
 
-                <img src="img/img/logo.jpg" alt="Logo" class="logo-img">
+                <img src="img/img/logo.jpg" loading="lazy" alt="Logo" class="logo-img">
 
                 <div class="brand-text ms-2">
                     <span style="color:red; ">SAANVITHA</span>

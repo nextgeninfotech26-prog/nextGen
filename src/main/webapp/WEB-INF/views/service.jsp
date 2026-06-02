@@ -397,7 +397,7 @@
 
             <a href="/" class="brand-wrapper d-flex align-items-center text-decoration-none">
 
-                <img src="img/img/logo.jpg" alt="Logo" class="logo-img">
+                <img src="img/img/logo.jpg" loading="lazy" alt="Logo" class="logo-img">
 
                 <div class="brand-text ms-2">
                     <span style="color:red; ">SAANVITHA</span>
@@ -571,7 +571,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <img src="img/img/service.png" class="img-fluid rounded-4 shadow" alt="Team">
+                <img src="img/img/service.png" loading="lazy" class="img-fluid rounded-4 shadow" alt="Team">
             </div>
             <div class="col-lg-6">
                 <h2 class="section-title">Why Businesses Trust Saanvitha</h2>

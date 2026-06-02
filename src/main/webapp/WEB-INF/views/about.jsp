@@ -416,7 +416,7 @@
 
             <a href="/" class="brand-wrapper d-flex align-items-center text-decoration-none">
 
-                <img src="img/img/logo.jpg" alt="Logo" class="logo-img">
+                <img src="img/img/logo.jpg" loading="lazy" alt="Logo" class="logo-img">
 
                 <div class="brand-text ms-2">
                     <span style="color:red; ">SAANVITHA</span>
@@ -501,10 +501,10 @@
                 <div class="col-md-6">
                     <div class="about-img">
                         <div class="about-img-1">
-                            <img src="img/img/19.jpg" alt="Image">
+                            <img src="img/img/19.jpg" loading="lazy" alt="Image">
                         </div>
                         <div class="about-img-2">
-                            <img src="img/img/20.jpg" alt="Image">
+                            <img src="img/img/20.jpg" loading="lazy" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -541,7 +541,7 @@
             <div class="row align-items-center g-4">
                 <div class="col-md-5">
                     <div class="feature-img">
-                        <img src="img/img/chalam.jpg" alt="Image">
+                        <img src="img/img/chalam.jpg" loading="lazy" alt="Image">
                     </div>
                 </div>
 
@@ -613,7 +613,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="img/img/seo.jpg" alt="SEO Training">
+                            <img src="img/img/seo.jpg" loading="lazy" alt="SEO Training">
                         </div>
                         <div class="team-text">
                             <h2>SEO Training</h2>
@@ -625,7 +625,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="img/img/ppc.jpg" alt="Google Ads">
+                            <img src="img/img/ppc.jpg" loading="lazy" alt="Google Ads">
                         </div>
                         <div class="team-text">
                             <h2>Google Ads (PPC)</h2>
@@ -637,7 +637,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="img/img/media.jpg" alt="Social Media Marketing">
+                            <img src="img/img/media.jpg" loading="lazy" alt="Social Media Marketing">
                         </div>
                         <div class="team-text">
                             <h2>Social Media Marketing</h2>
@@ -649,7 +649,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="img/img/web.jpg" alt="Web Development">
+                            <img src="img/img/web.jpg" loading="lazy" alt="Web Development">
                         </div>
                         <div class="team-text">
                             <h2>Website Development</h2>

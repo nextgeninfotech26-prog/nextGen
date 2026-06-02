@@ -1181,7 +1181,7 @@
 
             <a href="index.html" class="brand-wrapper d-flex align-items-center text-decoration-none">
 
-                <img src="img/img/logo.jpg" alt="Logo" class="logo-img">
+                <img src="img/img/logo.jpg" alt="Logo" loading="lazy" class="logo-img">
 
                 <div class="brand-text ms-2">
                     <span style="color:red; ">SAANVITHA</span>
@@ -1251,7 +1251,7 @@
 
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <img src="img/img/ad.jpg" class="d-block w-100" alt="Digital Marketing">
+                <img src="img/img/ad.jpg" loading="lazy" class="d-block w-100" alt="Digital Marketing">
                 <div class="carousel-caption">
     <h1 class="anim a1 rgb-wave">Boost Your Business with Digital Marketing</h1>
     <p class="anim a2 rgb-wave">Grow your brand with SEO, Social Media & Google Ads</p>
@@ -1260,7 +1260,7 @@
 
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <img src="img/carousel-2.jpg" class="d-block w-100" alt="Training">
+                <img src="img/carousel-2.jpg" loading="lazy" class="d-block w-100" alt="Training">
                 <div class="carousel-caption text-center">
                     <h1 class="anim b1">Digital Marketing Training</h1>
                     <p class="anim b2">Live Projects + 100% Placement Support</p>
@@ -1270,7 +1270,7 @@
 
             <!-- Slide 3 -->
             <div class="carousel-item">
-                <img src="img/carousel-3.jpg" class="d-block w-100" alt="Designing">
+                <img src="img/carousel-3.jpg" loading="lazy" class="d-block w-100" alt="Designing">
                 <div class="carousel-caption text-end">
                     <h1 class="anim c1">Website & Graphic Designing</h1>
                     <p class="anim c2">Build your brand with creative design solutions</p>
@@ -1299,25 +1299,25 @@
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="fact-item">
-                        <img src="img/icon-4.png" alt="Icon">
+                        <img src="img/icon-4.png" loading="lazy" alt="Icon">
                         <h2>Qualified Team</h2>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="fact-item">
-                        <img src="img/icon-1.png" alt="Icon">
+                        <img src="img/icon-1.png" loading="lazy" alt="Icon">
                         <h2>Individual Approach</h2>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="fact-item">
-                        <img src="img/icon-8.png" alt="Icon">
+                        <img src="img/icon-8.png" loading="lazy" alt="Icon">
                         <h2>100% Success</h2>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="fact-item">
-                        <img src="img/icon-6.png" alt="Icon">
+                        <img src="img/icon-6.png" loading="lazy" alt="Icon">
                         <h2>100% Satisfaction</h2>
                     </div>
                 </div>
@@ -1334,10 +1334,10 @@
                 <div class="col-md-6">
                     <div class="about-img">
                         <div class="about-img-1">
-                            <img src="img/img/12.jpg" alt="Image">
+                            <img src="img/img/12.jpg" loading="lazy" alt="Image">
                         </div>
                         <div class="about-img-2">
-                            <img src="img//img/11.jpg" alt="Image">
+                            <img src="img//img/11.jpg" loading="lazy" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -1390,7 +1390,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-1.png" alt="">
+                        <img src="img/icon-1.png" loading="lazy" alt="">
                         <h3>Digital Marketing</h3>
                         <p>Grow your business with SEO, Social Media Marketing, and paid advertising strategies.</p>
                         <a href="#">Read More</a>
@@ -1399,7 +1399,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-2.png" alt="">
+                        <img src="img/icon-2.png" loading="lazy" alt="">
                         <h3>SEO Optimization</h3>
                         <p>Improve your Google rankings and drive organic traffic with advanced SEO techniques.</p>
                         <a href="#">Read More</a>
@@ -1408,7 +1408,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-3.png" alt="">
+                        <img src="img/icon-3.png" loading="lazy" alt="">
                         <h3>Website Development</h3>
                         <p>Build fast, responsive, and modern websites that convert visitors into customers.</p>
                         <a href="#">Read More</a>
@@ -1417,7 +1417,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-4.png" alt="">
+                        <img src="img/icon-4.png" loading="lazy" alt="">
                         <h3>Graphic Designing</h3>
                         <p>Creative designs for branding, social media, and marketing materials.</p>
                         <a href="#">Read More</a>
@@ -1426,7 +1426,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-5.png" alt="">
+                        <img src="img/icon-5.png" loading="lazy" alt="">
                         <h3>Google Ads (PPC)</h3>
                         <p>Run high-converting ad campaigns to generate leads and increase sales.</p>
                         <a href="#">Read More</a>
@@ -1435,7 +1435,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-6.png" alt="">
+                        <img src="img/icon-6.png" loading="lazy" alt="">
                         <h3>Social Media Marketing</h3>
                         <p>Engage your audience and grow your brand on platforms like Instagram & Facebook.</p>
                         <a href="#">Read More</a>
@@ -1444,7 +1444,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-7.png" alt="">
+                        <img src="img/icon-7.png" loading="lazy" alt="">
                         <h3>Digital Marketing Training</h3>
                         <p>Learn with live projects, real-time experience, and placement assistance.</p>
                         <a href="#">Read More</a>
@@ -1453,7 +1453,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
-                        <img src="img/icon-8.png" alt="">
+                        <img src="img/icon-8.png" loading="lazy" alt="">
                         <h3>Branding & Strategy</h3>
                         <p>Build a strong brand identity with strategic planning and creative execution.</p>
                         <a href="#">Read More</a>
@@ -1474,7 +1474,7 @@
 
                 <!-- LEFT IMAGE -->
                 <div class="col-md-7 mb-4">
-                    <img src="img/img/15.jpg" class="feature-main-img img-fluid rounded shadow" alt="Digital Growth">
+                    <img src="img/img/15.jpg" class="feature-main-img img-fluid rounded shadow" loading="lazy" alt="Digital Growth">
                 </div>
 
                 <!-- RIGHT CONTENT -->
@@ -1664,7 +1664,7 @@
 
                         <!-- FRONT -->
                         <div class="flip-front">
-                            <img src="img/img/google-seo.jpg" alt="">
+                            <img src="img/img/google-seo.jpg" loading="lazy" alt="">
                             <span class="tagline">SEO • Ranking Growth</span>
                         </div>
 
@@ -1683,7 +1683,7 @@
                     <div class="flip-inner">
 
                         <div class="flip-front">
-                            <img src="img/img/uiux.jpg" alt="">
+                            <img src="img/img/uiux.jpg" loading="lazy" alt="">
                             <span class="tagline">UI/UX • Conversion</span>
                         </div>
 
@@ -1700,7 +1700,7 @@
                     <div class="flip-inner">
 
                         <div class="flip-front">
-                            <img src="img/img/ads.jpg" alt="">
+                            <img src="img/img/ads.jpg" loading="lazy" alt="">
                             <span class="tagline">Ads • Performance</span>
                         </div>
 
@@ -1718,7 +1718,7 @@
                     <div class="flip-inner">
 
                         <div class="flip-front">
-                            <img src="img/img/analytics.jpg" alt="">
+                            <img src="img/img/analytics.jpg" loading="lazy" alt="">
                             <span class="tagline">Analytics • Strategy</span>
                         </div>
 
