@@ -1163,7 +1163,7 @@
                             <a href="#"><i class="fab fa-twitter"></i></a>
                         </div>
 
-                        <a href="contact.html" class="quote-btn">Get A Quote</a>
+                        <a href="/contact" class="quote-btn">Get A Quote</a>
 
                     </div>
                 </div>
@@ -1867,32 +1867,6 @@
     </script>
 
     <script>
-        const track = document.querySelector('.testimonial-track');
-        let position = 0;
-
-        function slideTestimonials() {
-            const cardWidth = document.querySelector('.testimonial-card').offsetWidth + 20;
-
-            position += cardWidth;
-
-            if (position >= track.scrollWidth / 2) {
-                position = 0; // loop
-            }
-
-            track.style.transform = `translateX(-${position}px)`;
-        }
-
-        // auto slide
-        let slider = setInterval(slideTestimonials, 3000);
-
-        // pause on hover (pro UX)
-        track.addEventListener('mouseenter', () => clearInterval(slider));
-        track.addEventListener('mouseleave', () => {
-            slider = setInterval(slideTestimonials, 3000);
-        });
-    </script>
-
-    <script>
         document.addEventListener("DOMContentLoaded", function () {
 
             const wrapper = document.querySelector('.circle-wrapper');
@@ -1937,6 +1911,31 @@
                 items[index].classList.add('active');
                 index = (index + 1) % total;
             }, 2000);
+
+            const track = document.querySelector('.testimonial-track');
+            console.log("-->",track);
+            let position = 0;
+
+            function slideTestimonials() {
+                const cardWidth = document.querySelector('.testimonial-card').offsetWidth + 20;
+
+                position += cardWidth;
+                console.log(position, track.scrollWidth,"=>",(track.scrollWidth/2));
+                if (position >= track.scrollWidth / 2) {
+                    position = 0; // loop
+                }
+
+                track.style.transform = 'translateX(-' + position + 'px)';
+            }
+
+            // auto slide
+            let slider = setInterval(slideTestimonials, 3000);
+
+            // pause on hover (pro UX)
+            track.addEventListener('mouseenter', () => clearInterval(slider));
+            track.addEventListener('mouseleave', () => {
+                slider = setInterval(slideTestimonials, 3000);
+            });     
         });
     </script>
     <script src="js/data-target.js"></script>
